@@ -61,7 +61,7 @@
         <div class="work-experience-item">
           <h1>Shield-on Service <span>(Freelance)</span></h1>
           <p class="work-experience-date">
-            22 February 2021 - 22 February 2022
+            09 December 2021 - 22 February 2022
           </p>
           <ul>
             <li class="work-experience-li-header">
