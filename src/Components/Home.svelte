@@ -21,13 +21,6 @@
           <span class="highlight"
             >i have some experiences in backend field.</span
           >
-          <br /> <br />
-          At the year of 2018 I applied into Bina Nusantara University to study more
-          about tech industry such as how to make a diagram before making an application,
-          analyzing documents, requirements gathering and also develop some programs.
-          Not to mention that I also like to do my own research about tech from Youtube,
-          Udemy, Stackoverflow, etc.
-
           <br /><br />
 
           My current focus is to create awesome product using my skill i've
