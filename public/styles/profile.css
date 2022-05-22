@@ -1,0 +1,64 @@
+.profile-wrapper {
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.profile {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.profile-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.general-info,
+.skills-info {
+  max-width: 500px;
+}
+
+.profile-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  line-height: 2em;
+}
+
+.profile-info p:last-child {
+  margin-bottom: 15px;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image--wrapper {
+  position: relative;
+  max-width: 300px;
+  margin: auto;
+}
+
+.profile-image--wrapper img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: inherit;
+  }
+
+  .profile-image {
+    margin: 50px 0;
+  }
+}

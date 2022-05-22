@@ -1,0 +1,68 @@
+.contact-wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+}
+
+.contact-info {
+  position: relative;
+}
+
+.contact-title {
+  font-size: 3em;
+  padding-bottom: 20px;
+}
+
+.social-media-list {
+  display: flex;
+}
+
+.social-media-list a {
+  display: inline-flex;
+  margin-right: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.social-media-list button {
+  cursor: pointer;
+  padding: 0 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+#github-icon,
+#linkedin-icon,
+#whatsapp-icon,
+#email-icon {
+  width: 24px;
+}
+
+.contact-img {
+  width: 100%;
+  position: relative;
+}
+
+#universe2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(70%, -20%);
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-img {
+    display: none;
+  }
+}

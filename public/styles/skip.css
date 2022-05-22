@@ -1,0 +1,13 @@
+.skip-wrapper {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+}
+
+.skip-label {
+  margin-right: 5px;
+  font-weight: bold;
+}
