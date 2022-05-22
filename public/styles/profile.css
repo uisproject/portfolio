@@ -32,6 +32,10 @@
   line-height: 2em;
 }
 
+.profile-info .education-story {
+  line-height: 2em;
+}
+
 .profile-info p:last-child {
   margin-bottom: 15px;
 }
