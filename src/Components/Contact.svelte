@@ -5,6 +5,12 @@
   import WhatsappIcon from "../assets/Icons/WhatsappIcon.svelte";
   import Universe2Svg from "../assets/images/Universe2Svg.svelte";
   import RocketSvg from "../assets/images/Rocket.svelte";
+
+  export let github;
+  export let linkedin;
+  export let whatsapp;
+  export let email;
+  export let resume;
 </script>
 
 <link rel="stylesheet" href="./styles/contact.css" />
@@ -19,28 +25,19 @@
           clicking on of these below
         </p>
         <div class="social-media-list">
-          <a href="https://github.com/uisproject" target="_blank">
+          <a href={github} target="_blank">
             <GithubIcon />
           </a>
-          <a
-            href="https://www.linkedin.com/in/louis-leonardo-a64a6b171/"
-            target="_blank"
-          >
+          <a href={linkedin} target="_blank">
             <LinkedinIcon />
           </a>
-          <a
-            href="https://wa.me/081288035811?text=Hi!%20This%20is%20Louis%20Thank%20you%20for%20reaching%20me%20out%2C%20I%20will%20respond%20to%20your%20message%20as%20soon%20as%20possible"
-            target="_blank"
-          >
+          <a href={whatsapp} target="_blank">
             <WhatsappIcon />
           </a>
-          <a href="mailto:leonardolouis2@gmail.com">
+          <a href={email}>
             <EmailIcon />
           </a>
-          <a
-            href="https://drive.google.com/file/d/12SAIHD3Xe69iNsbED8cZiBAPXwZ3a0xI/view?usp=sharing"
-            target="_blank"
-          >
+          <a href={resume} target="_blank">
             <button>My Resume</button>
           </a>
         </div>

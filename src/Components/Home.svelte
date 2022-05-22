@@ -1,6 +1,16 @@
 <script>
   import PlanetSvg from "../assets/images/PlanetSvg.svelte";
   import AsteroidsSvg from "../assets/images/AsteroidsSvg.svelte";
+  import EmailIcon from "../assets/Icons/EmailIcon.svelte";
+  import GithubIcon from "../assets/Icons/GithubIcon.svelte";
+  import LinkedinIcon from "../assets/Icons/LinkedinIcon.svelte";
+  import WhatsappIcon from "../assets/Icons/WhatsappIcon.svelte";
+
+  export let github;
+  export let linkedin;
+  export let whatsapp;
+  export let email;
+  export let resume;
 </script>
 
 <link rel="stylesheet" href="./styles/home.css" />
@@ -26,6 +36,23 @@
           My current focus is to create awesome product using my skill i've
           learnt so far and becoming better and better😁.
         </p>
+        <div class="social-media-list">
+          <a href={github} target="_blank">
+            <GithubIcon />
+          </a>
+          <a href={linkedin} target="_blank">
+            <LinkedinIcon />
+          </a>
+          <a href={whatsapp} target="_blank">
+            <WhatsappIcon />
+          </a>
+          <a href={email}>
+            <EmailIcon />
+          </a>
+          <a href={resume} target="_blank">
+            <button>My Resume</button>
+          </a>
+        </div>
       </div>
     </div>
   </div>
