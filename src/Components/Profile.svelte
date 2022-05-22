@@ -12,7 +12,7 @@
           <h1 class="profile-title">Profile</h1>
           <p>Louis Leonardo</p>
           <p>
-            Bornt at <strong> 15 January 2000 ({currentAge}yrs)</strong> in
+            Bornt at <strong> 15 January 2000 ({currentAge}yrs old)</strong> in
             <strong>Jakarta, Indonesia</strong>
           </p>
           <p>
