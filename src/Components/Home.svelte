@@ -30,7 +30,7 @@
     });
 
     // opening animation
-    const openingTL = gsap.timeline({ delay: 2 });
+    const openingTL = gsap.timeline({ delay: 1.4 });
     const homeText = document.querySelectorAll(".home-trans");
 
     openingTL
@@ -70,11 +70,11 @@
         <p class="home-para home-trans">
           A Web Developer that <span class="highlight"
             >specialized in front-end development using vanilla and various
-            frameworks
+            frameworks with some experiences in backend field.
           </span>
-          with some experiences in backend field.
-          <br /><br />
-
+        </p>
+        <br />
+        <p class="home-trans">
           My current focus is to create awesome product using my skill i've
           learnt so far and becoming better and better😁.
         </p>

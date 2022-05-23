@@ -30,3 +30,7 @@ nav ul li {
 nav .logo-text {
   font-weight: bold;
 }
+
+.nav-wrapper ul li a {
+  text-decoration: none;
+}
