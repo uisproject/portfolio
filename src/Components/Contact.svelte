@@ -24,7 +24,7 @@
 
 <link rel="stylesheet" href="./styles/contact.css" />
 
-<section class="contact-wrapper">
+<section class="contact-wrapper" id="contact">
   <div class="contact">
     <div class="contact-container">
       <div class="contact-info">

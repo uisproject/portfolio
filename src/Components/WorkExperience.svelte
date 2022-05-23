@@ -9,7 +9,7 @@
       scrollTrigger: {
         trigger: ".work-experience-wrapper",
         start: "top center",
-        markers: true,
+        markers: false,
       },
     });
 
@@ -23,7 +23,7 @@
 
 <link rel="stylesheet" href="./styles/work-experience.css" />
 
-<section class="work-experience-wrapper">
+<section class="work-experience-wrapper" id="work-experience">
   <div class="work-experience">
     <div class="work-experience-container">
       <h2 class="work-experience--title">My Work Experiences</h2>

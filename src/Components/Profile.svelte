@@ -15,9 +15,9 @@
 
     const profileTL = gsap.timeline({
       scrollTrigger: {
-        trigger: ".profile-wrapper",
+        trigger: ".profile-container",
         start: "top center",
-        markers: true,
+        markers: false,
       },
     });
 
@@ -28,8 +28,8 @@
         stagger: 0.1,
       })
       .from(".profile-image", {
-        scale: 0,
-        ease: "Elastic.easeOut",
+        opacity: 0,
+        ease: "Power3.easeOut",
         duration: 3,
       });
   });

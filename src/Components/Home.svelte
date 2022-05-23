@@ -60,7 +60,7 @@
 
 <link rel="stylesheet" href="./styles/home.css" />
 
-<section class="home-wrapper">
+<section class="home-wrapper" id="home">
   <div class="home">
     <div class="home-container">
       <div class="home-info home-trans">

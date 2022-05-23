@@ -22,7 +22,7 @@
 
 <link rel="stylesheet" href="./styles/project.css" />
 
-<section class="project-wrapper">
+<section class="project-wrapper" id="projects">
   <div class="project">
     <div class="project-container">
       <h1 class="project-title">Selected Projects</h1>
