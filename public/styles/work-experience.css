@@ -21,7 +21,6 @@
 
 .work-experience-list {
   position: relative;
-  max-width: 700px;
   max-height: 500px;
   line-height: 2em;
   overflow-y: scroll;
@@ -59,11 +58,4 @@
 
 .work-experience-li-header {
   margin: 20px 0;
-}
-
-#universe {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: translateY(-30%);
 }

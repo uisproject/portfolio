@@ -1,5 +1,24 @@
 <script>
-  import UniverseSvg from "../assets/images/UniverseSvg.svelte";
+  import { gsap } from "gsap";
+  import ScrollTrigger from "gsap/ScrollTrigger";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const workExperienceTL = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".work-experience-wrapper",
+        start: "top center",
+        markers: true,
+      },
+    });
+
+    workExperienceTL.from(".work-experience-wrapper", {
+      y: -50,
+      opacity: 0,
+      duration: 1,
+    });
+  });
 </script>
 
 <link rel="stylesheet" href="./styles/work-experience.css" />
@@ -109,7 +128,6 @@
           </div>
         </div>
       </div>
-      <UniverseSvg />
     </div>
   </div>
 </section>
