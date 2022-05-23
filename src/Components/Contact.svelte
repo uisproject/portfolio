@@ -1,10 +1,19 @@
 <script>
+  import { onMount } from "svelte";
+  import { gsap } from "gsap";
   import EmailIcon from "../assets/Icons/EmailIcon.svelte";
   import GithubIcon from "../assets/Icons/GithubIcon.svelte";
   import LinkedinIcon from "../assets/Icons/LinkedinIcon.svelte";
   import WhatsappIcon from "../assets/Icons/WhatsappIcon.svelte";
-  import Universe2Svg from "../assets/images/Universe2Svg.svelte";
-  import RocketSvg from "../assets/images/Rocket.svelte";
+  import Astronaut from "../assets/images/Astronaut.svelte";
+
+  onMount(() => {
+    const width = window.innerWidth;
+    const contactTL = gsap.timeline({ repeat: -1, defaults: { duration: 20 } });
+    contactTL
+      .fromTo("#astronaut", { x: -200, y: 200 }, { x: width + 200, y: -200 }, 0)
+      .to("#astronaut", { rotate: 360 }, 0);
+  });
 
   export let github;
   export let linkedin;
@@ -42,9 +51,7 @@
           </a>
         </div>
       </div>
-      <div class="contact-img">
-        <Universe2Svg />
-      </div>
     </div>
   </div>
+  <Astronaut />
 </section>

@@ -1,11 +1,13 @@
 .contact-wrapper {
   width: 90%;
   margin: auto;
+  position: relative;
 }
 
 .contact {
   min-height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -52,15 +54,8 @@ button {
   width: 24px;
 }
 
-.contact-img {
-  width: 100%;
-  position: relative;
-  display: grid;
-  place-items: center;
-}
-
-@media only screen and (max-width: 700px) {
-  .contact-img {
-    display: none;
-  }
+#astronaut {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
