@@ -18,6 +18,10 @@
   };
 </script>
 
+<svelte:head>
+  <title>Uisproject Portfolio</title>
+</svelte:head>
+
 <main>
   <div class="main-wrapper">
     <header>
