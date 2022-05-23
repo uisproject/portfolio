@@ -17,7 +17,7 @@
   position: relative;
   z-index: 10;
   background-color: #0a192f;
-  padding: 0 10px 10px 10px;
+  padding: 0 20px 20px 20px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -43,13 +43,19 @@
   width: 600px;
   top: 0;
   left: 0;
-  transform: translate(-50%, 50%);
 }
 
-#asteroids {
+#asteroid1 {
   position: absolute;
   width: 600px;
   top: 0;
   right: 0;
-  transform: translate(50%, 50%);
+  transform: translate(40%, 50%);
+}
+
+#mini-asteroid {
+  position: absolute;
+  top: 50px;
+  right: -100px;
+  transform: translateX();
 }

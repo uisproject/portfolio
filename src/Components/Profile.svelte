@@ -62,7 +62,7 @@
 
 <link rel="stylesheet" href="./styles/profile.css" />
 
-<section class="profile-wrapper">
+<section class="profile-wrapper" id="profile">
   <div class="profile">
     <div class="profile-container">
       <div class="profile-info">

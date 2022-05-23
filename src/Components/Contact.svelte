@@ -22,7 +22,7 @@
         <h1 class="contact-title">Thanks for checking out my portfolio!</h1>
         <p>
           If you have something to say or wanna say hi!, just let me know by
-          clicking on of these below
+          clicking one of these below
         </p>
         <div class="social-media-list">
           <a href={github} target="_blank">

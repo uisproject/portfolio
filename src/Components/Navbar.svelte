@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="./styles/navbar.css" />
 <nav>
   <div class="nav-wrapper">
-    <ul style="visibility: hidden;">
+    <ul>
       <li>Home</li>
-      <li>Profile</li>
+      <li><a href="#profile">Profile</a></li>
       <li>Work Experience</li>
       <li>Projects</li>
       <li>Contact</li>
