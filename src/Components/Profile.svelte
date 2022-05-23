@@ -1,6 +1,6 @@
 <script>
   import { gsap } from "gsap";
-  import gsapCore from "gsap/gsap-core";
+  import ScrollTrigger from "gsap/ScrollTrigger";
   import { onMount } from "svelte";
   const currentAge = new Date().getFullYear() - 2000;
 
@@ -12,6 +12,26 @@
 
   onMount(() => {
     gsap.to(".block-type", { opacity: 0, duration: 1, delay: 1, repeat: -1 });
+
+    const profileTL = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".profile-wrapper",
+        start: "top center",
+        markers: true,
+      },
+    });
+
+    profileTL
+      .from(".profile-trans", {
+        x: -50,
+        opacity: 0,
+        stagger: 0.1,
+      })
+      .from(".profile-image", {
+        scale: 0,
+        ease: "Elastic.easeOut",
+        duration: 3,
+      });
   });
 
   const showMoreHandle = () => {
@@ -68,23 +88,24 @@
       <div class="profile-info">
         <div class="general-info">
           <h1 class="profile-title">Profile</h1>
-          <p>Louis Leonardo</p>
-          <p>
+          <p class="profile-trans">Louis Leonardo</p>
+          <p class="profile-trans">
             Bornt at <strong> 15 January 2000 ({currentAge}yrs old)</strong> in
             <strong>Jakarta, Indonesia</strong>
           </p>
-          <p>
+          <p class="profile-trans">
             Studied at <strong>Bina Nusantara</strong> with
             <strong>Information System Degree</strong>
           </p>
 
-          <div class="education-story">
+          <div class="education-story profile-trans">
             At the year of 2018 I applied into Bina Nusantara University to
             study more about
             <span class="more-txt" />
             <div class="block-type">|</div>
           </div>
           <button
+            class="profile-trans"
             style="margin-top: 20px;"
             on:click={!isRunning ? showMoreHandle : null}
             >Show {showMore ? "More" : "Less"}</button
@@ -92,10 +113,10 @@
         </div>
         <br />
         <div class="skills-info">
-          <h1 class="profile-title">Skills I have worked with</h1>
-          <p>HTML & CSS, JavaScript, Java, PHP</p>
+          <h1 class="profile-title profile-trans">Skills I have worked with</h1>
+          <p class="profile-trans">HTML & CSS, JavaScript, Java, PHP</p>
           <br />
-          <p>
+          <p class="profile-trans">
             CodeIgniter4, Express.js, SASS, React.JS, MySQL, Webpack, Joomla,
             Wordpress, GIT, Next.js, @reduxjs/toolkit, ANTD, axios, TailwindCSS
           </p>
