@@ -7,7 +7,7 @@ This is my Portfolio or you can visit the production site [here](https://portfol
 Install with with npm
 
 ```bash
-  git clone git@github.com:uisproject/portfolio.git
+  git clone git@github.com:uisproject/project_portfolio.git
 ```
 
 Go to the project directory
